@@ -1,4 +1,4 @@
-package com.atecher.algorithms;
+package com.atecher.algorithms.leetcode;
 
 import java.util.Scanner;
 

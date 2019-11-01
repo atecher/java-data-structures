@@ -1,4 +1,4 @@
-package com.atecher.algorithms;
+package com.atecher.algorithms.leetcode;
 
 /**
  * @Author: hanhongwei
@@ -15,9 +15,11 @@ public class NarcissisticNumber {
      */
     public static void main(String args[]) {
         Math mymath = new Math();
-        for (int i = 100; i <= 999; i++)
-            if (mymath.narcissisticNumber(i) == true)
+        for (int i = 100; i <= 999; i++) {
+            if (mymath.narcissisticNumber(i) == true) {
                 System.out.println(i);
+            }
+        }
     }
     static class Math {
         public boolean narcissisticNumber(int x) {
@@ -37,10 +39,7 @@ public class NarcissisticNumber {
             i = x / 100;
             j = (x % 100) / 10;
             k = x % 10;
-            if (x == i * i * i + j * j * j + k * k * k)
-                return true;
-            else
-                return false;
+            return x == i * i * i + j * j * j + k * k * k;
         }
     }
 }
